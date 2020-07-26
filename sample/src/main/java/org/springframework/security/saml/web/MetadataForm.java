@@ -57,6 +57,7 @@ public class MetadataForm {
     private boolean requireArtifactResolveSigned;
 
     public MetadataForm() {
+        
     }
 
     public String getEntityId() {

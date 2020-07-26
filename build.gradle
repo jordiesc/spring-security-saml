@@ -12,6 +12,7 @@ buildscript {
 
 def coreProjects = subprojects.findAll { !it.name.contains("sample") }
 
+
 configure(allprojects) { project ->
 	group = "org.springframework.security.extensions"
 
@@ -34,10 +35,13 @@ configure(allprojects) { project ->
 	compileJava {
 		sourceCompatibility=1.6
 		targetCompatibility=1.6
+		options.encoding = "UTF-8"
+		
 	}
 	compileTestJava {
 		sourceCompatibility=1.6
 		targetCompatibility=1.6
+		options.encoding = "UTF-8"
 	}
 
 	test {

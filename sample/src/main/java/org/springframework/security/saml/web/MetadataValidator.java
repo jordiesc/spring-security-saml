@@ -33,6 +33,7 @@ public class MetadataValidator implements Validator {
 
     public MetadataValidator(MetadataManager manager) {
         this.manager = manager;
+        
     }
 
     public boolean supports(Class<?> clazz) {

@@ -1,5 +1,8 @@
 description = "Spring Security SAML v2 library"
 
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
 dependencies {
 	compile "org.springframework.security:spring-security-core:$springSecurityVersion",
 		"org.springframework.security:spring-security-config:$springSecurityVersion",
@@ -37,6 +40,8 @@ dependencies {
 	compile group: 'xalan', name: 'xalan', version:"$xalanVersion"
 	compile group: "com.narupley", name: "not-going-to-be-commons-ssl", version: "0.3.20"
 	compile group: "xml-apis", name: "xml-apis", version: "$xmlApisVersion"
+    compile group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.2'
+
 
 	provided "javax.servlet:javax.servlet-api:3.0.1"
 
